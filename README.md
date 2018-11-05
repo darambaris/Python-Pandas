@@ -4,7 +4,7 @@ Folders organized by chapters:
 
 	./chapterX (x: 1,2,3,4..)
 		/data
-			input files (.csv)
+			input files (.csv,.tsv)
 		/src
         		source code
   		/output
