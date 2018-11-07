@@ -1,6 +1,6 @@
 import pandas as pd
 
-
+#read .csv and print its structure
 def readCSV():
 
 	#read file and define separator
@@ -15,5 +15,16 @@ def readCSV():
 	#print number of rows and columns
 	print(df.shape)
 
+	#columns name
+	print(df.columns)
+
+	#uses dtypes to get dtype columns
+	print(df.dtypes)
+
+	#gets more informations about data
+	print(df.info())
+
+	return df
+
 if __name__ == '__main__':
-	readCSV()
+	df = readCSV()
