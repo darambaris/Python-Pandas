@@ -3,7 +3,7 @@ def handleList():
 	my_list = ['a',1,True,3.14]
 	print(my_list)
 
-	#print the first item
+	#print the first items
 	print(my_list[0])
 
 	#print the 3 first values
@@ -57,6 +57,26 @@ def handleDict():
 	return my_dict
 
 
+def slicingValues():
+	
+	#start zero, left inclusive and right not inclusive
+	l = ['dog','cat','bird','bear','snake','lion']
+
+	#inclusive dog l[0], not inclusive cat l[1]
+	print(l[0:1])
+
+	#start 0 (inclusive) and end 4 (not inclusive)
+	print(l[:4])
+
+	#start 3 (inclusive) and end last element
+	print(l[3:])
+
+	#step 2 (jump 1 position each step)
+	print(l[::2])
+
+	#start 1 and end 4 step 2
+	print(l[1:4:2])
+	
 if __name__ == '__main__':
 	my_list  =  handleList()
 	my_tuple =  handleTuple()
@@ -69,3 +89,5 @@ if __name__ == '__main__':
 	#each key-value pair returns like a tuple
 	print(my_dict.items())
 
+	print('\n>>>Slicing Values')
+	slicingValues()
