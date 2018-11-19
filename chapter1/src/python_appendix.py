@@ -76,7 +76,21 @@ def slicingValues():
 
 	#start 1 and end 4 step 2
 	print(l[1:4:2])
+
+def rangeInterval():
 	
+	#create a interval with 5 values
+	r = range(5)
+
+	#return a generator (= xrange in Python 2)
+	print (r)
+	print (type(r))
+
+	#convert generator to list
+	lr = list(range(5))
+	print (lr)
+
+
 if __name__ == '__main__':
 	my_list  =  handleList()
 	my_tuple =  handleTuple()
@@ -91,3 +105,6 @@ if __name__ == '__main__':
 
 	print('\n>>>Slicing Values')
 	slicingValues()
+
+	print('\n>>> Range Interval')
+	rangeInterval()
